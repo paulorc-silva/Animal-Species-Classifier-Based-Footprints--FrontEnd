@@ -8,8 +8,14 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 <body>
+    <section class="load-page" id="load-page">
+        <lottie-player src="assets/images/load-paw.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></lottie-player>
+        <h1>Aguarde...</h1>
+    </section>
+
     <section class="upload-page" id="upload-page">
         <div class="image-preview">
             <div class="title">Envie uma imagem de uma pegada</div>
@@ -22,12 +28,19 @@
                 <input type="file" name="upload-file" id="image" accept=".jpg, .jpeg, .png"/>
                 <label for="image">Selecionar imagem</label>
             </div>
-            <div class="btn" id="send-image" style="display: none;">
+            <div class="btn" id="send-image" style="display: none;" onclick="showPage('result')">
                 <input type="submit" name="send-file">
                 <label for="send-image">Analisar pegada</label>
             </div>
         </div>
     </section>
+    
+    <section class="result-page" id="result-page">
+        <img src="assets/images/temp.svg" alt="404 - Página em construção">
+        <h1>Parece que você entrou em uma página em construção. Volte mais tarde</h1>
+        <a onclick="showPage('upload')">Voltar para a tela de upload</a>
+    </section>
+
     <script src="assets/js/app.js"></script>
 </body>
 </html>

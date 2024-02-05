@@ -48,6 +48,29 @@ function closeIt() {
     sendBtn.style.display = "none";
 };
 
+function showPage(page) { 
+    console.log(page);
+    var loadPage = document.getElementById('load-page');
+    var uploadPage = document.getElementById('upload-page');
+    var resultPage = document.getElementById('result-page');
+
+    loadPage.style.bottom = "0";
+    
+    setTimeout(function() { 
+        loadPage.style.bottom = "-100%";
+        
+        if (page == 'upload') {
+            uploadPage.style.display = "flex";
+            resultPage.style.display = 'none';
+            closeIt();
+        }
+        else {
+            uploadPage.style.display = "none";
+            resultPage.style.display = 'block';
+        }
+    }, 3000)
+}
+
 image.addEventListener("change", handleImageChange);
 
 preview.addEventListener("dragover", (e) => {

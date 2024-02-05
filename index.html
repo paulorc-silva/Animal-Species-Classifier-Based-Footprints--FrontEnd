@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Classificação baseada na pegada</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+    <section class="upload-page" id="upload-page">
+        <div class="image-preview">
+            <div class="title">Envie uma imagem de uma pegada</div>
+            <div class="preview">
+                <img src="" alt="" id="preview-img">
+                <div class="load-image-upload"></div>
+                <i class="fas fa-solid fa-times close" onclick="closeIt()"></i>
+            </div>
+            <div class="btn" id="upload-image">
+                <input type="file" name="upload-file" id="image" accept=".jpg, .jpeg, .png"/>
+                <label for="image">Selecionar imagem</label>
+            </div>
+            <div class="btn" id="send-image" style="display: none;">
+                <input type="submit" name="send-file">
+                <label for="send-image">Analisar pegada</label>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

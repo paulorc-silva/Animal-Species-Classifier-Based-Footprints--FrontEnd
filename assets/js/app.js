@@ -68,7 +68,7 @@ function showPage(page) {
             uploadPage.style.display = "none";
             resultPage.style.display = 'block';
         }
-    }, 3000)
+    }, 5000)
 }
 
 image.addEventListener("change", handleImageChange);

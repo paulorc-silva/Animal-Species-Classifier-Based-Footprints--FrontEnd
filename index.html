@@ -17,8 +17,8 @@
     </section>
 
     <section class="upload-page" id="upload-page">
-        <div class="image-preview">
-            <div class="title">Envie uma imagem de uma pegada</div>
+        <div class="container">
+            <div class="title">Envie a imagem de uma pegada</div>
             <div class="preview">
                 <img src="" alt="" id="preview-img">
                 <div class="load-image-upload"></div>
@@ -36,9 +36,25 @@
     </section>
     
     <section class="result-page" id="result-page">
-        <img src="assets/images/temp.svg" alt="404 - Página em construção">
-        <h1>Parece que você entrou em uma página em construção. Volte mais tarde</h1>
-        <a onclick="showPage('upload')">Voltar para a tela de upload</a>
+        <div class="predictions-card">
+            <div class="predictions-card-image">
+                <img src="assets/images/coiote.jpg" alt="animal" />
+            </div>
+
+            <h1>Analisamos a pegada enviada e...</h1>
+            <p class="description">
+                Classificamos, com <strong>88%</strong> de acurácia, o animal que deixou a pegada como <strong><i>Canis latrans</i></strong>, ou como é popularmente conhecido, o <strong>Coiote</strong>
+            </p>
+
+            <div class="btn-pred" id="view-details" onclick="window.open('https://www.inaturalist.org/taxa/42051-Canis-latrans', '_blank');">
+                <input type="submit" name="view-details">
+                <label for="view-details">Ver detalhes do animal</label>
+            </div>
+            <div class="btn-pred-alt" id="new-analisis" onclick="showPage('upload')">
+                <input type="submit" name="new-analisis">
+                <label for="new-analisis">Fazer nova análise</label>
+            </div>
+        </div>
     </section>
 
     <script src="assets/js/app.js"></script>

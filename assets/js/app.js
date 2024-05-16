@@ -49,7 +49,6 @@ function closeIt() {
 };
 
 function showPage(page) { 
-    console.log(page);
     var loadPage = document.getElementById('load-page');
     var uploadPage = document.getElementById('upload-page');
     var resultPage = document.getElementById('result-page');

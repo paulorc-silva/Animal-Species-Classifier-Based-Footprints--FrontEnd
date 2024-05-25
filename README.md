@@ -11,7 +11,6 @@ As tecnologias usadas no projeto foram:
 - JavaScript
    
 # ⚠️ Observações
-- Este projeto possui um back end disponível [aqui](https://github.com/paulorc-silva/Animal-Species-Classifier-Based-Footprints--BackEnd).
 - Os dados da predição apresentados estão fixos no código apenas para exemplo. Caso queira testar a aplicação completa, clique [aqui](https://github.com/paulorc-silva/Animal-Species-Classifier-Based-Footprints).
 
 # ⚙️ Instalação
